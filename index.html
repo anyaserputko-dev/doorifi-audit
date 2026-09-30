@@ -1229,10 +1229,8 @@ a.irow:hover b{text-decoration:underline}
   <p class="meta">September 2026 · Shopify lead funnel · walked end to end and measured in the browser on an iPhone, 23 Sep 2026</p>
   <nav class="toc">
     <a href="#summary">Summary</a>
+    <a href="#critical">6 first-wave</a>
     <a href="#strong">What already works</a>
-    <a href="#critical">10 first-wave</a>
-    <a href="#medium">10 second-wave</a>
-    <a href="#low">6 small fixes</a>
     <a href="#price">Pricing</a>
   </nav>
 </section>
@@ -1240,62 +1238,33 @@ a.irow:hover b{text-decoration:underline}
 <section class="slide" id="summary">
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><h2>The short version</h2></div>
-  <p class="lead">Doorifi is not a store — it is a <b>lead funnel</b>: five steps to a cash offer, or a phone call. We built this funnel — 42 tasks, from the address step to the cash-offer screens — so this is a look from the inside at what to build next. We walked all five steps on an iPhone, measured every screen against the fold and read the numbers out of the browser rather than judging by eye.</p>
-  <p class="lead"><b>The strategy underneath is strong.</b> The offer reads in three seconds, the funnel asks for the address before it asks for personal details — the right order — the situation pages (divorce, inherited, as-is) match how people actually search, there are 20+ local pages and a full Spanish version, and a licensed NJ business stands behind it. Almost everything below is about execution on top of a good idea, not about the idea.</p>
-  <p class="lead"><b>What we noticed.</b> On a phone the first screen carries a logo, a headline and a decorative picture — the address field only appears at 1,094 px, roughly 270 px below the fold. The floating “Get cash offer” pill is fixed on top of the page and covers the top of the very form it advertises. The green “Get My Free Home Report” button is an empty link — it opens nothing, and the page throws two JavaScript errors on load. And the ad platforms do not see results: today only GA4 and HubSpot receive data — no Meta Pixel, no Google Ads tag, no funnel-step events.</p>
-  <p class="lead"><b>What we propose.</b> Twenty-six items, ordered so the ones that move lead volume land first: put the form on the first mobile screen, move the floating CTA to a bottom bar, make the home-report button capture an email, install the advertising tags, and add address autocomplete. Then trust and friction — reviews you can verify, the licence on the homepage, a privacy line where the phone number is asked, a progress bar across the five steps. Each item below we reproduced live and measured; the figures are ours, taken on 23 September 2026.</p>
+  <p class="lead"><b>We built this funnel</b> — 42 tasks, from the address step to the cash-offer screens — so this is a look from the inside at what to build next.</p>
+  <p class="lead"><b>What we noticed.</b> On a phone the address field starts below the first screen, the floating “Get cash offer” pill covers the form, the “Get My Free Home Report” button has no action behind it, the address is typed by hand, the five steps show no progress, and the 4.9★ rating has no link to its source.</p>
+  <p class="lead"><b>What we propose.</b> Six changes, each on one screen — today on the left, after on the right.</p>
   <div class="kpis" style="margin-top:34px">
-    <div class="kpi"><b>10</b><span>First wave</span></div>
-    <div class="kpi"><b>10</b><span>Second wave</span></div>
-    <div class="kpi"><b>6</b><span>Small fixes</span></div>
-    <div class="kpi"><b>96 h</b><span>Dev time</span></div>
-    <div class="kpi"><b>$3,840</b><span>Fixed price</span></div>
+    <div class="kpi"><b>6</b><span>First wave</span></div>
+    <div class="kpi"><b>25 h</b><span>Dev time</span></div>
+    <div class="kpi"><b>$1,000</b><span>Fixed price</span></div>
   </div>
 </section>
 
-<section class="slide" id="strong">
-  <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><h2>What already works<small>Worth saying plainly — this is not a thin page, and these are the parts we would not touch.</small></h2></div>
-  <div class="good">
-    <div class="gcard"><div class="ck">✓</div><h3>The address is asked first</h3><p>Property address before name, email and phone. By the final step the seller has answered four questions, so the highest-friction ask lands where it costs least.</p></div>
-    <div class="gcard"><div class="ck">✓</div><h3>Content matched to real situations</h3><p>Divorce, inherited, as-is, hoarder — four life events, each with its own guide, plus 20+ local pages for Freehold, Howell, Manalapan, Red Bank and the county hubs.</p></div>
-    <div class="gcard"><div class="ck">✓</div><h3>A complete Spanish site</h3><p>/es returns 200 with lang="es" and six hreflang alternates — properly implemented, and a real advantage in Central NJ.</p></div>
-    <div class="gcard"><div class="ck">✓</div><h3>The “Ready to talk?” block</h3><p>Click-to-call, email and FAQ in one place, with published response times and disarming copy. For sellers who will never fill a form, this is the conversion path.</p></div>
-    <div class="gcard"><div class="ck">✓</div><h3>No fake urgency</h3><p>We looked for countdown timers, stock counters and synthetic “someone just requested an offer” popups. There are none, and the cookie banner offers a real choice.</p></div>
-    <div class="gcard"><div class="ck">✓</div><h3>The infrastructure is already paid for</h3><p>Shopify responds in well under half a second, HubSpot CRM (portal 146721927) loads site-wide and GA4 is firing. Most of what follows is wiring, not rebuilding.</p></div>
-  </div>
-</section>
+
 
 <section class="slide divider" id="critical">
   <img class="silk" src="img/silk.png" alt="">
   <span class="sev crit">First wave</span>
-  <h2>10 fixes<br>that move leads</h2>
+  <h2>6 fixes<br>that move leads</h2>
 </section>
 
-<section class="slide">
-  <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><h2>First wave — in this order<small>Direct effect on lead volume. Every item but the last is explained slide by slide below, on your own screens.</small></h2></div>
-  <div class="crit-grid">
-    <a class="ccard" href="#p01"><div class="top"><span class="n">01</span><span class="go">Slide 01 →</span></div><b>Mobile hero rebuild — the form above the fold</b><div class="now">The address field sits at 1,094 px; the fold is at 822 px.</div><div class="do">Drop the decorative mockup so the form lands on the first screen.</div></a>
-    <a class="ccard" href="#p03"><div class="top"><span class="n">02</span><span class="go">Slide 03 →</span></div><b>Fix the dead “Get My Free Home Report” CTA</b><div class="now">&lt;a href="#"&gt; with no handler; two JS errors on every load.</div><div class="do">Wire the button to an email capture and fix the script.</div></a>
-    <a class="ccard" href="#p04"><div class="top"><span class="n">03</span><span class="go">Slide 04 →</span></div><b>Google Places address autocomplete</b><div class="now">autocomplete="off", no suggestions, nothing validated.</div><div class="do">Add Places autocomplete and remove autocomplete="off".</div></a>
-    <a class="ccard" href="#p05"><div class="top"><span class="n">04</span><span class="go">Slide 05 →</span></div><b>Meta Pixel + lead and funnel-step events</b><div class="now">No fbevents, no fbq; the dataLayer holds only gtm.dom and gtm.load.</div><div class="do">Install the pixel and fire an event on each of the five steps.</div></a>
-    <a class="ccard" href="#p05"><div class="top"><span class="n">05</span><span class="go">Slide 05 →</span></div><b>Google Ads conversion tag + GTM container</b><div class="now">No AW- tag, no googleadservices request, no tag manager.</div><div class="do">Install GTM first, then the conversion tag on top of it.</div></a>
-    <a class="ccard" href="#p08"><div class="top"><span class="n">06</span><span class="go">Slide 08 →</span></div><b>Hero image — resolution, srcset, WebP</b><div class="now">A 512×512 source stretched across 390×1,797 px, no srcset.</div><div class="do">Serve the right size from Shopify’s CDN with fetchpriority.</div></a>
-    <a class="ccard" href="#p02"><div class="top"><span class="n">07</span><span class="go">Slide 02 →</span></div><b>Move the floating CTA to a bottom bar</b><div class="now">Fixed, z-index 90 — it renders above the lead form’s own card.</div><div class="do">Anchor it at the bottom and hide it while the form is in view.</div></a>
-    <a class="ccard" href="#p06"><div class="top"><span class="n">08</span><span class="go">Slide 06 →</span></div><b>Progress indicator across the five steps</b><div class="now">No step counter and no progress bar at any point in the funnel.</div><div class="do">One line that says how far along the seller is.</div></a>
-    <a class="ccard" href="#p07"><div class="top"><span class="n">09</span><span class="go">Slide 07 →</span></div><b>Reconcile the trust numbers + link the reviews</b><div class="now">The 4.9★ links nowhere; zero links to a Google profile on the page.</div><div class="do">Link the real profile and settle on one homeowner number.</div></a>
-    <div class="ccard"><div class="top"><span class="n">10</span><span class="go">2 h · $80</span></div><b>Fix the iOS zoom + autocomplete attributes</b><div class="now">Inputs compute to 15 px, so Safari zooms on every field focus.</div><div class="do">16 px on inputs, autocomplete on name, email and phone.</div></div>
-  </div>
-</section>
+
 
 <section class="slide" id="p01">
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><span class="num">01</span><h2><span class="sev crit">First wave</span>The first mobile screen has no field or button to start with</h2></div>
   <div class="pbody">
-    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>On an iPhone the first screen carries a logo, a badge, a headline and a large decorative picture of a phone with a SOLD sign. <b>No field, no button, no trust row.</b></p><p>The address input renders at <b>y = 1,094 px</b>. The fold is at 822 px — so the funnel begins roughly <b>270 px below</b> anything the visitor can see, on a page 13,405 px tall.</p><p class="fine-note">Measured 23 Sep 2026, iPhone viewport 430×822.</p></div>
+    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>On an iPhone the first screen carries a logo, a headline and a large decorative picture — no field and no button.</p><p>The address field starts at <b>1,094 px</b>, below the first screen.</p><p class="fine-note">Measured 23 Sep 2026, iPhone viewport 430×822.</p></div>
     <div class="v1"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-hero-m.jpg" alt=""></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The first screen today — a picture where the form should be</div></div></div>
-    <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Drop the decorative mockup on mobile and let the form take that space. Nothing else on the screen changes — same headline, same photo, same wording.</p><p>On the right is <b>your own page</b> with that one element removed: the address field now sits at <b>y = 522 px</b>, above the fold, on the first screen.</p></div>
+    <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Drop the decorative mockup on mobile and let the form take that space.</p><p>On the right is your own page with that one element removed: the address field moves to <b>522 px</b>, on the first screen.</p></div>
     <div class="v2"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/fix-hero-m.jpg" alt=""></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The same screen — the form is now on it</div></div></div>
     <div class="cardcol">
       <div class="benefit-top"><span class="pill">Why it pays</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
@@ -1308,9 +1277,9 @@ a.irow:hover b{text-decoration:underline}
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><span class="num">02</span><h2><span class="sev crit">First wave</span>The floating CTA sits on top of the form it advertises</h2></div>
   <div class="pbody">
-    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The “Still selling? / Get cash offer” pill is <b>fixed at the top of the screen</b> (position: fixed, z-index 90, 300×59 px) and follows the visitor down the whole page.</p><p>We hit-tested it rather than judging by eye: at the pill’s own coordinates the browser returns <b>DIV.cta-content stacked above the lead form’s card</b>. On a 430 px screen it covers the top of the funnel, the section headings and the reviews.</p></div>
+    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The “Still selling? / Get cash offer” pill is pinned to the top of the screen and follows the visitor down the whole page.</p><p>On a phone it covers the top of the form, the section headings and the reviews.</p></div>
     <div class="v1"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-form-m.jpg" alt=""></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The pill covers the page above the form</div></div></div>
-    <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Move the same CTA to a <b>bottom bar</b> and hide it while the form is in view. The page keeps a permanent route into the funnel and stops covering its own content.</p><p>On the right — the same screen, with the pill taken off the top and placed at the bottom.</p></div>
+    <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Move the same button to a bottom bar and hide it while the form is in view.</p><p>On the right — the same screen, with the pill taken off the top and placed at the bottom.</p></div>
     <div class="v2"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/fix-form-nopill-m.jpg" alt=""><div class="dov dov-bar"><span class="t">Still selling?</span><span class="b">Get cash offer</span></div></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The same frame — CTA moved to the bottom</div></div></div>
     <div class="cardcol">
       <div class="benefit-top"><span class="pill">Why it pays</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
@@ -1323,13 +1292,13 @@ a.irow:hover b{text-decoration:underline}
   <img class="silk sm" src="img/silk.png" alt="">
   <div class="shead"><span class="num">03</span><h2><span class="sev crit">First wave</span>The “Get My Free Home Report” button has no action behind it</h2></div>
   <div class="pbody">
-    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The whole “Get Exclusive Home Insights” block is built for the majority who are researching, not selling today: four benefits, a privacy line, a strong green button.</p><p>That button is <b>&lt;a href="#"&gt;</b> with no handler bound. We clicked it: the URL becomes doorifi.com/#, nothing opens, and the visitor is thrown back to the top of the page. The console throws <b>“Cannot read properties of null (reading 'addEventListener')” twice</b> on load — the script that should bind it never finds its target.</p></div>
+    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The “Get Exclusive Home Insights” block is built for people researching, not selling today: four benefits and a strong green button.</p><p>We tapped it: nothing opens, and the visitor is thrown back to the top of the page.</p></div>
     <div class="v1"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-report-m.jpg" alt=""></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The button today — it leads nowhere</div></div></div>
     <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Fix the script and let the button do what it promises: open a short capture panel, deliver the report by email, and write the contact into HubSpot, which is already installed.</p><p>On the right — the same section, with the panel the button should open.</p></div>
     <div class="v2"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-report-m.jpg" alt=""><div class="dov dov-sheet" style="top:auto"><h4>Get your free home report</h4><p>Where should we send it?</p><div class="dov-inp">Enter your email address</div><div class="dov-btn">Send my report</div><p class="dov-fine">100% free. No spam. Unsubscribe anytime.</p></div></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The same section, with the panel the button should open</div></div></div>
     <div class="cardcol">
       <div class="benefit-top"><span class="pill">Why it pays</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
-      <div class="card"><p>This is the entire soft-conversion path for people who are months away from selling. Today it captures nothing and quietly disorients the visitors most interested in it.</p><div class="stats"><div><b>0 leads</b><span>from a block built to collect them</span></div><div><b>2 JS errors</b><span>on every page load</span></div></div></div>
+      <div class="card"><p>This is the whole path for people who are months away from selling. Today it collects no contacts.</p><div class="stats"><div><b>0 leads</b><span>from a block built to collect them</span></div><div><b>1 tap</b><span>sends the visitor back to the top of the page</span></div></div></div>
       <div class="ptag"><span>Price</span><b>$200</b><em>5 h &#183; $40/h</em></div>
     </div>
   </div>
@@ -1349,23 +1318,10 @@ a.irow:hover b{text-decoration:underline}
     </div>
   </div>
 </section>
-<section class="slide" id="p05">
-  <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><span class="num">05</span><h2><span class="sev crit">First wave</span>Meta and Google Ads do not see which clicks became leads</h2></div>
-  <p class="lead">We read every tag and every network request on the homepage. Two things are firing, and the two that decide whether advertising is profitable are missing entirely.</p>
-  <div class="tmap">
-    <div class="t"><b>No Meta Pixel</b><span>No fbevents.js, no connect.facebook.net, no fbq anywhere in the markup or the requests. Facebook and Instagram are where distressed and life-event sellers are reachable by geography — and right now you cannot retarget the visitors who leave, cannot build a lookalike from closed deals, and cannot let Meta optimise toward people who actually submit.</span><em>4 h · $160</em></div>
-    <div class="t"><b>No Google Ads conversion tag</b><span>No AW- tag and no googleadservices request. “Sell my house fast NJ” is one of the most expensive local categories in the country; without a conversion signal, Google’s bidding is optimising blind while you pay premium click prices.</span><em>4 h · $160</em></div>
-    <div class="t"><b>No tag manager</b><span>No GTM container, so every future pixel or experiment needs a theme edit. Installing it first makes everything after it faster and reversible.</span><em>included</em></div>
-    <div class="t"><b>No funnel-step events</b><span>The dataLayer holds only gtm.dom and gtm.load. Five steps, and no event on any of them — so nobody can see which step loses people. Fixes stay assumptions instead of becoming measurable.</span><em>included with the pixel work</em></div>
-    <div class="t ok"><b>GA4 is live and correct</b><span>G-MGDRD43HE5 fires page_view, respects the consent banner and sends non-personalised ads signals. The analytics baseline is fine.</span><em>keep</em></div>
-    <div class="t ok"><b>HubSpot is already installed</b><span>Portal 146721927 loads site-wide, so contact records, routing and automation are paid for and waiting. Everything above plugs into it.</span><em>keep</em></div>
-  </div>
-  <div class="ptag" style="margin-top:24px;max-width:320px"><span>Price</span><b>$320</b><em>8 h &#183; $40/h</em></div>
-</section>
+
 <section class="slide" id="p06">
   <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><span class="num">06</span><h2><span class="sev crit">First wave</span>Five steps without a progress indicator</h2></div>
+  <div class="shead"><span class="num">05</span><h2><span class="sev crit">First wave</span>Five steps without a progress indicator</h2></div>
   <div class="pbody">
     <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The funnel runs address and property type → bedrooms → bathrooms → basement → contact details. We walked all five steps: there is <b>no step counter and no progress bar</b> at any point.</p><p>Every step looks identical to the one before it, so the seller has no idea whether the next tap is the last one or the fifth of ten — the classic reason people abandon a multi-step form.</p></div>
     <div class="v1"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-contactstep-m.jpg" alt=""></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">Step 5 today — nothing marks it as the last one</div></div></div>
@@ -1380,92 +1336,52 @@ a.irow:hover b{text-decoration:underline}
 </section>
 <section class="slide" id="p07">
   <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><span class="num">07</span><h2><span class="sev crit">First wave</span>The 4.9★ rating has no link to its source</h2></div>
+  <div class="shead"><span class="num">06</span><h2><span class="sev crit">First wave</span>The 4.9★ rating has no link to its source</h2></div>
   <div class="pbody">
-    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The stats band claims <b>2,500+ NJ homeowners served</b> and a <b>4.9★ Google rating</b>. The rating links nowhere — there are <b>zero links to a Google profile</b> on the page — and /pages/reviews carries no Google, BBB or Trustpilot source either.</p><p>The band carries three headline claims — <b>2,500+ homeowners, $50M+ in purchases, 4.9★</b> — and not one of them is sourced. The page markup also still holds an older “Trusted by 2,000+ NJ homeowners” line, so the two homeowner figures should be settled on one.</p><p class="fine-note">Your NJ Real Estate Licence #0453810 and the Manalapan HQ do exist — on /pages/contact, where almost nobody looks.</p></div>
+    <div class="txt t1"><div class="lbl"><span class="pill">Today</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>The stats band shows <b>2,500+</b> homeowners served and a <b>4.9★</b> Google rating, but the rating links nowhere and the reviews page names no source.</p><p>Your NJ licence #0453810 is on the site — only on the contact page.</p><p class="fine-note">Your NJ Real Estate Licence #0453810 and the Manalapan HQ do exist — on /pages/contact, where almost nobody looks.</p></div>
     <div class="v1"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-trust-m.jpg" alt=""></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">A claim with nothing behind it</div></div></div>
-    <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>First wave: link the rating to the real Google Business Profile and settle on one homeowner number. Second wave ($160): embed the live reviews widget and add AggregateRating schema so the stars can show in search.</p><p>On the right — the same band, with the rating made verifiable in one tap.</p></div>
+    <div class="txt t2"><div class="lbl"><span class="pill">We propose</span><svg class="conn" viewBox="0 0 54 12"><path d="M0 6h50M45 1.5 50 6l-5 4.5" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg></div><p>Link the rating to the real Google Business Profile and settle on one homeowner number.</p><p>On the right — the same band, with the rating made verifiable in one tap.</p></div>
     <div class="v2"><div><div class="phone"><div class="screen"><div class="island"></div><div class="sbar"><span>9:41</span><svg viewBox="0 0 24 11"><rect x=".5" y=".5" width="20" height="10" rx="3" fill="none" stroke="#111"/><rect x="2" y="2" width="16" height="7" rx="1.5" fill="#111"/><rect x="21.5" y="3.5" width="1.8" height="4" rx=".9" fill="#111"/></svg></div><div class="view"><img class="shot" src="img/now-trust-m.jpg" alt=""><div class="dov dov-chip" style="top:29%"><span><i></i>Read all 4.9★ reviews on Google</span></div></div><div class="url"><span>doorifi.com</span></div></div></div><div class="cap">The same band — the rating now leads to the profile</div></div></div>
     <div class="cardcol">
       <div class="benefit-top"><span class="pill">Why it pays</span><span class="arrow"><svg width="14" height="16" viewBox="0 0 14 16"><path d="M7 1v13M1.5 8.5 7 14l5.5-5.5" fill="none" stroke="#444" stroke-width="1.6"/></svg></span></div>
       <div class="card"><p>The reviews evidently already exist. Making them checkable is the cheapest trust work available — and it is what a sceptical seller looks for before calling a cash buyer.</p><div class="stats"><div><b>0 links</b><span>from the 4.9★ claim to any profile</span></div><div><b>3 claims</b><span>on the band, none of them sourced</span></div></div></div>
-      <div class="ptag"><span>Price</span><b>$120</b><em>3 h &#183; $40/h — widget and schema in the second wave</em></div>
+      <div class="ptag"><span>Price</span><b>$120</b><em>3 h &#183; $40/h</em></div>
     </div>
   </div>
 </section>
-<section class="slide" id="p08">
-  <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><span class="num">08</span><h2><span class="sev crit">First wave</span>The landing page weighs 17.8 MB</h2></div>
-  <div class="tk">
-    <div><b>17.8 MB</b><span>decoded on first load</span></div>
-    <div><b>231</b><span>requests</span></div>
-    <div><b>11.2 MB</b><span>video</span></div>
-    <div><b>138</b><span>JavaScript files · 4.7 MB</span></div>
-    <div><b>56</b><span>separate CSS files</span></div>
-    <div><b>0 of 18</b><span>images in WebP or AVIF</span></div>
-  </div>
-  <p class="lead">A well-tuned landing page targets under 2 MB. Four <b>autoplaying 1080p videos</b> account for about 11 MB on their own, and one of them ships without a poster frame. The hero image — the largest element on the page, and the one Google measures for loading speed — is a <b>512×512 source stretched across 390×1,797 px</b>, with no srcset, served from lh3.googleusercontent.com instead of Shopify’s image CDN, which is why it gets none of Shopify’s automatic resizing or format conversion.</p>
-  <p class="lead">These are lab figures from a data-centre connection, so treat them as a floor — on a Monmouth County commute the same page is materially worse. The hosting is not the problem: the server answers in well under half a second. The weight is entirely in assets you control.</p>
-  <div class="two" style="margin-top:8px">
-    <div class="card"><p><b>What we would do</b></p><div class="stats"><div><b>Video</b><span>compress to a web bitrate, add posters, load offscreen clips only when they scroll into view</span></div><div><b>Hero image</b><span>correct resolution, srcset, WebP, fetchpriority — served from Shopify’s CDN</span></div></div></div>
-    <div class="ptag"><span>Price</span><b>$400</b><em>hero image 4 h (first wave) + video 6 h (second)</em></div>
-  </div>
-</section>
-<section class="slide divider" id="medium">
-  <img class="silk" src="img/silk.png" alt="">
-  <span class="sev imp">Second wave</span>
-  <h2>10 second-wave<br>fixes</h2>
-</section>
 
-<section class="slide">
-  <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><h2>Friction and trust<small>Worth doing straight after the first wave — each one compounds the gains above.</small></h2></div>
-  <div class="imp-grid">
-    <div class="irow"><i>01</i><div><b>There is no page that explains how this works</b><span>The nav link “How it works” resolves to /pages/home-insights, whose title says “How Doorifi works — simple steps” but whose H1 is the hero headline and whose content is a home-valuation pitch. Nowhere does the site answer: what happens after I submit, who visits, how is the offer calculated, am I obligated, how do I get paid. In cash home-buying, that opacity is the objection.</span><em>6 h · $240</em></div></div>
-    <div class="irow"><i>02</i><div><b>Four autoplaying 1080p videos</b><span>The 11 MB measured on slide 08. The hero image is the first-wave half of that work; the video is this half — compress, add posters, load offscreen clips on scroll. No design change.</span><em>6 h · $240</em></div></div>
-    <div class="irow"><i>03</i><div><b>The header is not sticky, and holds no phone and no CTA</b><span>Measured position: static. On a 13,405 px page the navigation disappears after the first screen. The phone number (732) 740-3896 first appears at y = 5,823 px — 43% of the way down — on a page whose own copy invites a conversation.</span><em>5 h · $200</em></div></div>
-    <div class="irow"><i>04</i><div><b>On desktop the Next button and the trust row are below the fold</b><span>The visitor has to scroll before the funnel shows an action or a reason to trust it.</span><em>4 h · $160</em></div></div>
-    <div class="irow"><i>05</i><div><b>No live Google reviews and no review schema</b><span>The site ships WebSite, Organization and BreadcrumbList JSON-LD — but no AggregateRating and no LocalBusiness. With a 4.9 already claimed, valid review schema is a direct route to stars in search results on every local page.</span><em>4 h · $160</em></div></div>
-    <div class="irow"><i>06</i><div><b>No modern image formats, and 11 images without alt text</b><span>Of 18 images on the homepage: 0 in WebP or AVIF, only 3 lazy-loaded, 11 with no alt attribute — an SEO loss, and inconsistent with the accessibility commitment in your own footer.</span><em>4 h · $160</em></div></div>
-    <div class="irow"><i>07</i><div><b>Nothing is said about privacy where the phone number is asked</b><span>The final step asks for name, email and phone — all required — with no consent line, no privacy note and no trust badge at the exact moment a stranger hands over their number. The three fields also carry no autocomplete attributes, so phone autofill will not populate them.</span><em>3 h · $120</em></div></div>
-    <div class="irow"><i>08</i><div><b>Step 1 asks two things at once</b><span>The address field and the property-type list share the first screen, and the selected option is only faintly marked. Split them and strengthen the selected state.</span><em>3 h · $120</em></div></div>
-    <div class="irow"><i>09</i><div><b>Nothing fires when a visitor leaves</b><span>Once the home-report offer works, an exit-intent prompt on the homepage and on the situation guides is the natural second net — particularly where someone is actively researching a divorce or probate sale.</span><em>3 h · $120</em></div></div>
-    <div class="irow"><i>10</i><div><b>The licence and the address are hidden</b><span>NJ Real Estate Licence #0453810, the Manalapan HQ and the business hours live on /pages/contact only. The homepage — where the decision is made — carries no licence number and no address at all.</span><em>2 h · $80</em></div></div>
-  </div>
-</section>
 
-<section class="slide divider" id="low">
-  <img class="silk" src="img/silk.png" alt="">
-  <span class="sev low">Small fix</span>
-  <h2>6 items<br>of hygiene</h2>
-</section>
 
-<section class="slide">
+
+
+
+
+
+
+<section class="slide" id="strong">
   <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><h2>Polish and long-term measurement<small>No direct revenue gate — worth doing while the code is open anyway.</small></h2></div>
-  <div class="imp-grid">
-    <div class="irow"><i>01</i><div><b>Bundle the JavaScript and CSS</b><span>138 JS requests and 56 separate CSS files, nothing bundled, content pulled from 11 third-party hosts. On a high-latency mobile connection the request count hurts more than the bytes.</span><em>8 h · $320</em></div></div>
-    <div class="irow"><i>02</i><div><b>Turn on HubSpot chat</b><span>HubSpot already loads on every page, but no chat widget renders. For a business whose own section is headed “Ready to talk?”, chat is a third capture channel that is already paid for.</span><em>3 h · $120</em></div></div>
-    <div class="irow"><i>03</i><div><b>Footer pass</b><span>Add the phone number, the HQ address and social links, and make the © year dynamic.</span><em>2 h · $80</em></div></div>
-    <div class="irow"><i>04</i><div><b>Remove the Shopify “Sign in” link and the leftover cart artifacts</b><span>The nav sends sellers to /customer_authentication/redirect — an empty account flow on a site with no products. “Item added to your cart”, “View cart”, “Check out” are still in the DOM of every page.</span><em>2 h · $80</em></div></div>
-    <div class="irow"><i>05</i><div><b>Two H1 tags on the homepage</b><span>One empty H1 wraps the logo link, the other is the real headline. Converting the logo H1 to a div is a one-line fix.</span><em>1 h · $40</em></div></div>
-    <div class="irow"><i>06</i><div><b>No phone number in the Help Center</b><span>/pages/faq carries no phone at all, yet someone reading FAQs is mid-consideration — the best moment to offer a conversation.</span><em>1 h · $40</em></div></div>
+  <div class="shead"><h2>What already works<small>Worth saying plainly — this is not a thin page, and these are the parts we would not touch.</small></h2></div>
+  <div class="good">
+    <div class="gcard"><div class="ck">✓</div><h3>The address is asked first</h3><p>Property address before name, email and phone.</p></div>
+    <div class="gcard"><div class="ck">✓</div><h3>Content matched to real situations</h3><p>Divorce, inherited, as-is, hoarder — four life events, each with its own guide, plus 20+ local pages for Freehold, Howell, Manalapan, Red Bank and the county hubs.</p></div>
+    <div class="gcard"><div class="ck">✓</div><h3>A complete Spanish site</h3><p>/es returns 200 with lang="es" and six hreflang alternates — properly implemented, and a real advantage in Central NJ.</p></div>
+    <div class="gcard"><div class="ck">✓</div><h3>The “Ready to talk?” block</h3><p>Click-to-call, email and FAQ in one place, with published response times and disarming copy.</p></div>
+    <div class="gcard"><div class="ck">✓</div><h3>No fake urgency</h3><p>We looked for countdown timers, stock counters and synthetic “someone just requested an offer” popups.</p></div>
+    <div class="gcard"><div class="ck">✓</div><h3>The infrastructure is already paid for</h3><p>Shopify responds in well under half a second, HubSpot CRM (portal 146721927) loads site-wide and GA4 is firing.</p></div>
   </div>
 </section>
 
 <section class="slide" id="price">
   <img class="silk sm" src="img/silk.png" alt="">
-  <div class="shead"><h2>Time and price<small>Average development hours at a fixed $40/hour. Suggested order: first wave → second wave → small fixes.</small></h2></div>
+  <div class="shead"><h2>Time and price<small>Average development hours at a fixed $40/hour. Suggested order: first wave.</small></h2></div>
   <div class="pcol">
-    <div class="plist"><h4><span class="sev crit">First wave</span>First wave — must fix</h4><div class="prow"><i>01</i><span>Mobile hero rebuild — lead form above the fold</span><em>6 h</em><b>$240</b></div><div class="prow"><i>02</i><span>Fix the dead “Get My Free Home Report” CTA + wire email capture</span><em>5 h</em><b>$200</b></div><div class="prow"><i>03</i><span>Google Places address autocomplete + remove autocomplete="off"</span><em>5 h</em><b>$200</b></div><div class="prow"><i>04</i><span>Meta Pixel install + lead and funnel-step events</span><em>4 h</em><b>$160</b></div><div class="prow"><i>05</i><span>Google Ads conversion tag + GTM container</span><em>4 h</em><b>$160</b></div><div class="prow"><i>06</i><span>Hero image — correct resolution, srcset, WebP, fetchpriority</span><em>4 h</em><b>$160</b></div><div class="prow"><i>07</i><span>Reposition the floating CTA to a bottom bar</span><em>3 h</em><b>$120</b></div><div class="prow"><i>08</i><span>Progress indicator across the five steps</span><em>3 h</em><b>$120</b></div><div class="prow"><i>09</i><span>Reconcile the trust numbers + link verifiable Google reviews</span><em>3 h</em><b>$120</b></div><div class="prow"><i>10</i><span>Fix iOS zoom (16 px inputs) + autocomplete attributes on all fields</span><em>2 h</em><b>$80</b></div><div class="ptotal"><span>Subtotal</span><span>39 h · $1,560</span></div></div>
-    <div class="plist"><h4><span class="sev imp">Second wave</span>Second wave — should fix</h4><div class="prow"><i>01</i><span>Build a real “How It Works” process page + fix the nav link</span><em>6 h</em><b>$240</b></div><div class="prow"><i>02</i><span>Video optimisation — compress, add posters, lazy-load offscreen</span><em>6 h</em><b>$240</b></div><div class="prow"><i>03</i><span>Sticky header with click-to-call phone + “Get Cash Offer”</span><em>5 h</em><b>$200</b></div><div class="prow"><i>04</i><span>Desktop hero — bring Next and the trust row above the fold</span><em>4 h</em><b>$160</b></div><div class="prow"><i>05</i><span>Google reviews widget + AggregateRating / LocalBusiness schema</span><em>4 h</em><b>$160</b></div><div class="prow"><i>06</i><span>Image pipeline — WebP/AVIF, lazy-loading, alt text on 11 images</span><em>4 h</em><b>$160</b></div><div class="prow"><i>07</i><span>Privacy and consent microcopy + trust badges at the contact step</span><em>3 h</em><b>$120</b></div><div class="prow"><i>08</i><span>Step-1 simplification + stronger selected state on the options</span><em>3 h</em><b>$120</b></div><div class="prow"><i>09</i><span>Exit-intent capture for the home-report offer</span><em>3 h</em><b>$120</b></div><div class="prow"><i>10</i><span>Surface the NJ licence # and HQ address on the homepage and footer</span><em>2 h</em><b>$80</b></div><div class="ptotal"><span>Subtotal</span><span>40 h · $1,600</span></div></div>
-    <div class="plist"><h4><span class="sev low">Small fix</span>Third wave — nice to have</h4><div class="prow"><i>01</i><span>Bundle JavaScript and CSS (138 JS / 56 CSS files)</span><em>8 h</em><b>$320</b></div><div class="prow"><i>02</i><span>HubSpot live chat configuration</span><em>3 h</em><b>$120</b></div><div class="prow"><i>03</i><span>Footer pass — phone, address, social links, dynamic © year</span><em>2 h</em><b>$80</b></div><div class="prow"><i>04</i><span>Remove the Shopify “Sign in” link and leftover cart artifacts</span><em>2 h</em><b>$80</b></div><div class="prow"><i>05</i><span>Fix the duplicate H1 (empty logo heading)</span><em>1 h</em><b>$40</b></div><div class="prow"><i>06</i><span>Add a phone CTA block to the Help Center / FAQ</span><em>1 h</em><b>$40</b></div><div class="ptotal"><span>Subtotal</span><span>17 h · $680</span></div></div>
+    <div class="plist"><h4><span class="sev crit">First wave</span>First wave — must fix</h4><div class="prow"><i>01</i><span>The first mobile screen has no field or button to start with</span><em>6 h</em><b>$240</b></div><div class="prow"><i>02</i><span>The floating CTA sits on top of the form it advertises</span><em>3 h</em><b>$120</b></div><div class="prow"><i>03</i><span>The “Get My Free Home Report” button has no action behind it</span><em>5 h</em><b>$200</b></div><div class="prow"><i>04</i><span>The very first thing a seller does is type an address by hand</span><em>5 h</em><b>$200</b></div><div class="prow"><i>05</i><span>Five steps without a progress indicator</span><em>3 h</em><b>$120</b></div><div class="prow"><i>06</i><span>The 4.9★ rating has no link to its source</span><em>3 h</em><b>$120</b></div><div class="ptotal"><span>Subtotal</span><span>25 h · $1,000</span></div></div>
   </div>
   <div class="pbox" style="margin-top:30px">
     <p>Total estimate</p>
-    <div class="sum">96 h &#183; $3,840</div>
+    <div class="sum">25 h &#183; $1,000</div>
     <p>Fixed price for development implementation, at $40 per hour.</p>
-    <div class="terms"><span>First wave — 39 h</span><span>Second wave — 40 h</span><span>Small fixes — 17 h</span></div>
+    <div class="terms"><span>First wave — 25 h</span></div>
   </div>
   <p class="fine" style="margin-top:22px">Hours are averages and the price is fixed. Development implementation only — content production (seller video testimonials, photography, process-page copy) and third-party subscriptions (Google Places API, HubSpot tiers, call tracking) are not included.</p>
 </section>
@@ -1481,8 +1397,8 @@ a.irow:hover b{text-decoration:underline}
   <img class="silk sm" src="img/silk.png" alt="">
   <img src="img/logo-md.png" alt="MileDevs">
   <h2>Next step</h2>
-  <p>We agree on the first wave and start there — mobile hero, the floating CTA, the dead home-report button, the tracking tags and address autocomplete. Roughly 39 hours of work, and it is the part that changes lead volume.</p>
-  <p class="fine">Every figure in this document was measured live on doorifi.com on 23 September 2026 — iPhone viewport 430×822, all five funnel steps walked end to end, tags and network requests read in the browser, page weight and file counts taken from the Resource Timing API. The “We propose” screens are your own pages: either your site with one element changed, or your real screenshot with the proposed element drawn on it. They are illustrative, not final design.</p>
+  <p>We agree on these six changes and start there — the mobile first screen, the floating button, the home-report button, address autocomplete, the progress indicator and the rating link. 25 hours of work, and it is the part that changes lead volume.</p>
+  <p class="fine">Every figure was measured live on doorifi.com on 23 September 2026; the “We propose” screens are your own pages with one element changed.</p>
 </section>
 </body>
 </html>
